@@ -5,24 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button disabled> hello </Button>
-        <Button butType={ButtonType.Primary} size={ButtonSize.large}> hello </Button>
+        <Button className="custom" disabled> hello </Button>
+        <Button onClick={(e) => {e.preventDefault(); console.log(111);
+        }} butType={ButtonType.Default} size={ButtonSize.large}> hello button </Button>
+        <Button butType={ButtonType.Primary} size={ButtonSize.Small}> hello button </Button>
         <Button butType={ButtonType.Link} href="http://www.baidu.com" disabled> baidu </Button>
         <br />
-        <code>
-          const a = b
-        </code>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
