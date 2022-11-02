@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button, { ButtonSize, ButtonType } from './components/Button/Button';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Button disabled> hello </Button>
+        <Button butType={ButtonType.Primary} size={ButtonSize.large}> hello </Button>
+        <Button butType={ButtonType.Link} href="http://www.baidu.com" disabled> baidu </Button>
+        <br />
+        <code>
+          const a = b
+        </code>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
